@@ -7,17 +7,7 @@
 6. Настройте logout с любой страницы с использованием возможностей thymeleaf.
 7. Настройте LoginSuccessHandler так, чтобы админа после аутентификации направляло на страницу /admin, а юзера на его страницу /user.
 
-Для создания первого пользователя в бд:
+Первый пользователь:
 Имя - user
 Пароль - user
 Роль - admin
-
-insert into roles (name)
-values
-('ROLE_USER'), ('ROLE_ADMIN');
-
-insert into users (username, password)
-values
-('user', '$2a$12$JSYjkbR.SUVQpn/Vp7Y3bOD2.IsS17QvRqCtjK9OATUo/rVdFX/Ym');
-
-insert into users_roles (user_id, role_id) values (1, 2);
